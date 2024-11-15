@@ -12172,3 +12172,9 @@ Error while reading from 127.0.0.1:11001 : (104, 'Connection reset by peer')
 2024-11-15 16:22:50,245 Cleaning registries for queue: home-sanku-sodhi-lap-bench:short
 2024-11-15 16:22:50,246 Cleaning registries for queue: home-sanku-sodhi-lap-bench:default
 2024-11-15 16:22:50,246 Cleaning registries for queue: home-sanku-sodhi-lap-bench:long
+2024-11-15 16:36:20,285 Cleaning registries for queue: home-sanku-sodhi-lap-bench:short
+2024-11-15 16:36:20,293 Cleaning registries for queue: home-sanku-sodhi-lap-bench:default
+2024-11-15 16:36:20,295 Cleaning registries for queue: home-sanku-sodhi-lap-bench:long
+2024-11-15 16:49:50,355 Cleaning registries for queue: home-sanku-sodhi-lap-bench:short
+2024-11-15 16:49:50,359 Cleaning registries for queue: home-sanku-sodhi-lap-bench:default
+2024-11-15 16:49:50,361 Cleaning registries for queue: home-sanku-sodhi-lap-bench:long
