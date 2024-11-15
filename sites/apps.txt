@@ -1,0 +1,6 @@
+frappe
+airplane_mode
+airports_shop_management
+print_designer
+erpnext
+rentals

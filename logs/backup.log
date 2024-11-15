@@ -1,0 +1,54 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241108_180002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-08 18:00:02.866631
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241108_180002-lap_com-site_config_backup.json 127.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241108_180002-lap_com-database.sql.gz 318.4KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241109_120002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-09 12:00:04.504084
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241109_120002-lap_com-site_config_backup.json 127.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241109_120002-lap_com-database.sql.gz 320.5KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241109_180002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-09 18:00:02.725260
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241109_180002-lap_com-site_config_backup.json 127.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241109_180002-lap_com-database.sql.gz 326.9KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241111_120002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-11 12:00:02.888836
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241111_120002-lap_com-site_config_backup.json 149.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241111_120002-lap_com-database.sql.gz 342.6KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241111_180002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-11 18:00:02.591714
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241111_180002-lap_com-site_config_backup.json 216.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241111_180002-lap_com-database.sql.gz 363.8KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241112_120002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-12 12:00:02.512588
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241112_120002-lap_com-site_config_backup.json 216.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241112_120002-lap_com-database.sql.gz 369.8KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241113_120002-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-13 12:00:02.626303
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241113_120002-lap_com-site_config_backup.json 216.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241113_120002-lap_com-database.sql.gz 529.3KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241114_120001-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-14 12:00:02.287674
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241114_120001-lap_com-site_config_backup.json 240.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241114_120001-lap_com-database.sql.gz 559.3KiB
+Backup for Site lap.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_72f37c6e5afd770a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _72f37c6e5afd770a | /usr/bin/gzip >> ./lap.com/private/backups/20241115_120001-lap_com-database.sql.gz
+
+Backup Summary for lap.com at 2024-11-15 12:00:02.487661
+Config  : /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241115_120001-lap_com-site_config_backup.json 240.0B
+Database: /home/sanku-sodhi/lap-bench/sites/lap.com/private/backups/20241115_120001-lap_com-database.sql.gz 559.3KiB
+Backup for Site lap.com has been successfully completed

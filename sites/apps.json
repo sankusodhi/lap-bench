@@ -1,0 +1,61 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "16.0.0-dev"
+    },
+    "rentals": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "09c0bbae77aa53ca6ef83ff1b1591724c977ca32",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "37e00a66da7f38107ee31141c43154a4615ff568",
+            "branch": "version-13"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "13.55.2"
+    },
+    "airplane_mode": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "fee54fc0b067b0d7ae15eb0f02287b833223b02f",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    },
+    "print_designer": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "21fdcfca839a528a92744912fe50e98a025e10ec",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "1.0.0-dev"
+    },
+    "airports_shop_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "6fbd433b8f11cbe6c94e4c37bce5994feeeee809",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.0.1"
+    }
+}

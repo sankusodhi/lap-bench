@@ -1,0 +1,22 @@
+2024-11-11 16:53:11,886 INFO ipython === bench console session ===
+2024-11-11 16:53:11,886 INFO ipython import your_custom_app.path.to
+your_custom_app.path.to.send_rent_reminders()
+2024-11-11 16:53:11,887 INFO ipython import airports_shop_management.scheduled_jobs.payment_reminder
+airports_shop_management.scheduled_jobs.payment_reminder.send_rent_reminders()
+2024-11-11 16:53:11,887 INFO ipython === session end ===
+2024-11-11 17:03:47,822 INFO ipython === bench console session ===
+2024-11-11 17:03:47,825 INFO ipython import airports_shop_management.scheduled_jobs.payment_reminder
+airports_shop_management.scheduled_jobs.payment_reminder.send_rent_reminders()
+2024-11-11 17:03:47,825 INFO ipython import airports_shop_management.scheduled_jobs.payment_reminder
+2024-11-11 17:03:47,825 INFO ipython === session end ===
+2024-11-12 18:32:20,514 INFO ipython === bench console session ===
+2024-11-12 18:32:20,515 INFO ipython settings = frappe.get_doc("Rent Remainder")
+2024-11-12 18:32:20,515 INFO ipython settings = frappe.get_doc("Rent Remainder")
+2024-11-12 18:32:20,515 INFO ipython settings = frappe.get_doc("Rent Remainder")
+2024-11-12 18:32:20,515 INFO ipython settings = frappe.get_doc("Rent Remainder")
+2024-11-12 18:32:20,516 INFO ipython === session end ===
+2024-11-13 12:53:53,316 INFO ipython === bench console session ===
+2024-11-13 12:53:53,319 INFO ipython fappe.get_all("Contract")
+2024-11-13 12:53:53,319 INFO ipython frappe.get_all("Contract")
+2024-11-13 12:53:53,319 INFO ipython frappe.get_single("Rent Reminde")
+2024-11-13 12:53:53,319 INFO ipython === session end ===

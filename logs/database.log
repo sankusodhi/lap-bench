@@ -1,0 +1,382 @@
+2024-11-12 12:11:01,848 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `tenant_name` varchar(140), ADD COLUMN `email` varchar(140), ADD COLUMN `contact_information` varchar(140), ADD COLUMN `tenant_address` text
+2024-11-12 12:13:08,474 WARNING database DDL Query made to DB:
+create table `tabContract` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-11-12 12:16:25,249 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `start_date` date, ADD COLUMN `expiry_date` date, ADD COLUMN `payment_schedule` varchar(140)
+2024-11-12 12:16:35,672 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:20:51,677 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` ADD COLUMN `date_of_payment` date, ADD COLUMN `payment_receipt` text, ADD COLUMN `status` varchar(140) DEFAULT 'Outstanding'
+2024-11-12 12:20:51,683 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:30:32,861 WARNING database DDL Query made to DB:
+create table `tabRent Config` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-11-12 12:32:14,744 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Config` ADD COLUMN `default_rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `enable_rent_reminder` tinyint NOT NULL DEFAULT 0
+2024-11-12 12:32:48,514 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Config` MODIFY `default_rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `enable_rent_reminder` tinyint NOT NULL DEFAULT 0
+2024-11-12 12:33:02,681 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Config` MODIFY `enable_rent_reminder` tinyint NOT NULL DEFAULT 0, MODIFY `default_rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:35:30,353 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 12:35:32,345 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 12:35:32,575 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:35:32,689 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Config` MODIFY `default_rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `enable_rent_reminder` tinyint NOT NULL DEFAULT 0
+2024-11-12 12:35:32,778 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:35:32,897 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 12:35:33,067 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:36:46,459 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 12:36:47,998 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 12:36:48,141 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:36:48,266 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 12:36:48,355 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:57:27,884 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 12:57:29,142 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 12:57:29,218 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:57:29,327 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 12:57:29,433 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 13:09:45,299 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 13:09:46,408 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 13:09:46,504 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 13:09:46,605 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 13:09:46,765 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 16:43:39,965 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `email` varchar(140), ADD COLUMN `shop_name` varchar(140)
+2024-11-12 16:43:39,975 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 16:44:23,645 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `tenant_name` varchar(140)
+2024-11-12 16:44:23,653 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 16:46:00,062 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `status` varchar(140)
+2024-11-12 16:46:00,072 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 16:46:34,070 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 16:47:16,694 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 17:17:08,243 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 17:17:09,767 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 17:17:09,966 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 17:17:10,096 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 17:17:10,224 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 17:17:10,448 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 17:27:24,427 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 17:30:11,500 WARNING database DDL Query made to DB:
+RENAME TABLE `tabRent Config` TO `tabRent Remainder`
+2024-11-12 18:32:30,020 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:32:31,303 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:32:31,456 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:32:31,526 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:32:31,594 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:32:31,724 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:32:31,807 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Remainder` MODIFY `default_rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `enable_rent_reminder` tinyint NOT NULL DEFAULT 0
+2024-11-12 18:35:19,616 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:35:20,584 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:35:20,756 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:35:20,866 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:35:20,968 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:35:48,853 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:35:50,017 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:35:50,154 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:35:50,271 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 18:35:50,392 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:45:56,312 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:45:57,325 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:45:57,490 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:45:57,587 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:45:57,674 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:52:55,393 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:52:56,329 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:52:56,434 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:52:56,513 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 18:52:56,566 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:56:00,414 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:56:01,700 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:56:01,871 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:56:02,006 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 18:56:02,078 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:59:09,774 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 18:59:10,894 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 18:59:11,061 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:59:11,217 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 18:59:11,297 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:25:39,261 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 19:25:39,865 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 19:25:39,971 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:25:40,055 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:25:40,170 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:32:26,557 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 19:32:27,101 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 19:32:27,182 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:32:27,247 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 19:32:27,309 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:34:42,240 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 19:34:43,021 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 19:34:43,147 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 19:34:43,226 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 19:34:43,289 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 22:18:48,667 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 22:18:50,201 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 22:18:50,375 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 22:18:50,509 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 22:18:50,631 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 22:28:53,443 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-12 22:28:54,730 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-12 22:28:54,910 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-12 22:28:55,050 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-12 22:28:55,169 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 10:48:54,903 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 10:48:56,377 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 10:48:56,531 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 10:48:56,640 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-13 10:48:56,741 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:17:36,232 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 11:17:38,344 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 11:17:38,631 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:17:38,823 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:17:38,998 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:45:38,232 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 11:45:38,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 11:45:38,982 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:45:39,090 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-13 11:45:39,199 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:55:22,301 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 11:55:22,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 11:55:22,913 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 11:55:22,968 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-13 11:55:23,025 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:08:18,271 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 12:08:19,738 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 12:08:19,865 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:08:19,957 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:08:20,025 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:18:50,102 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `shop_image` text
+2024-11-13 12:18:50,112 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:59:29,288 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 12:59:29,821 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 12:59:29,894 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:59:29,943 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:59:29,993 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 12:59:30,051 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 17:14:06,980 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 17:35:02,899 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 17:35:03,759 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 17:35:03,869 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 17:35:03,946 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 17:35:04,008 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:24:25,832 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 19:24:26,722 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 19:24:26,839 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:24:26,908 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:24:26,969 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:32:11,293 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 19:32:11,956 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 19:32:12,066 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:32:12,119 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:32:12,166 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:53:17,584 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-13 19:53:18,370 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-13 19:53:18,479 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-13 19:53:18,574 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-13 19:53:18,670 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-14 11:19:07,749 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-14 11:19:09,250 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-14 11:19:09,417 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-14 11:19:09,543 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` int NOT NULL DEFAULT 0, MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-14 11:19:09,651 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-14 11:29:48,259 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-11-14 11:29:49,611 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `shop_number` varchar(140)
+2024-11-14 11:29:49,801 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-14 11:29:49,926 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area_of_shop` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `shop_number` int NOT NULL DEFAULT 0
+2024-11-14 11:29:50,039 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-11-14 11:32:26,136 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` decimal(21,9) NOT NULL DEFAULT 0.0
