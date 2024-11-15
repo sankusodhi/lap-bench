@@ -1,0 +1,3 @@
+[submodule "AirplaneMode-App"]
+	path = AirplaneMode-App
+	url = https://github.com/sankusodhi/AirplaneMode-App.git
